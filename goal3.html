@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  <link rel="stylesheet" href="goalStyle.css">
+  <title>Goal 3</title>
+</head>
+<body>
+<!-- NAVIGATION -->
+<nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://www.bmcc.cuny.edu/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="https://mybmcc.bmcc.cuny.edu/public/images/customization/Common/mybmcc.bmcc.cuny.edu_APM_act_logon_page_ag/image07_en.jpg" class="h-8" alt="BMCC Logo">
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <a href="application.php" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Apply to Club</a>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+        </li>
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Program Goals</button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="goal1.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Goal 1</a>
+              </li>
+              <li>
+                <a href="goal2.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Goal 2</a>
+              </li>
+              <li>
+                <a href="goal3.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Goal 3</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="faculty.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Faculty</a>
+        </li>
+        <li>
+          <a href="events.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">News & Events</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- GOAL INFO -->
+<section class="bg-white" style="margin-top: 50px">
+  <div class="goalInfoContainer">
+    <h1 class="goalInfoTitle">Develop Faculty Skills to Sustain ATE Investments</h1>
+    <p class="goalInfoText">BMCC will create opportunities for department faculty to improve their skills in mobile programming and secure coding, as well as in teaching in these areas, in order to achieve strong buy-in and preparedness to undertake the project and sustain it into the future.</p>
+  </div>
+</section>
+<!-- TAB CONTENT -->
+<div class="md:flex" style="padding: 20px">
+  <ul class="tabContainer" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+    <li class="me-2" role="presentation">
+      <button class="tabButton" id="objectives-tab" data-tabs-target="#objectives" type="button" role="tab" aria-controls="objectives" aria-selected="false">Objectives</button>
+    </li>
+    <li class="me-2" role="presentation">
+      <button class="tabButton" id="activities-tab" data-tabs-target="#activities" type="button" role="tab" aria-controls="activities" aria-selected="false">Activities</button>
+    </li>
+    <li class="me-2" role="presentation">
+      <button class="tabButton" id="timeline-tab" data-tabs-target="#timeline" type="button" role="tab" aria-controls="timeline" aria-selected="false">Timeline</button>
+    </li>
+    <li role="presentation">
+      <button class="tabButton" id="evaluation-tab" data-tabs-target="#evaluation" type="button" role="tab" aria-controls="evaluation" aria-selected="false">Evaluation</button>
+    </li>
+  </ul>
+  <div id="default-tab-content">
+    <div class="contentContainer" id="objectives" role="tabpanel" aria-labelledby="objectives-tab">
+      <ol class="space-y-5 text-gray-500 list-decimal list-inside dark:text-gray-400">
+        <li><span class="font-medium text-gray-800">
+          Train at least 4 faculty members in mobile programming during the first and second years of the project
+        </span></li>
+        <li><span class="font-medium text-gray-800">
+          Continue to provide training annually to any new faculty as well as additional skill building with existing faculty in the program, with a commitment to ensuring at least 4 faculty are prepared each semester to steward and deliver secure mobile programming curricula and to advise students
+        </span></li>
+        <li><span class="font-medium text-gray-800">
+          Provide financial support for 4 program faculty to attend an ATE conference once per year
+        </span></li>
+        <li><span class="font-medium text-gray-800">
+          Organize yearly Stakeholder Advisory Board meetings to discuss topics of interest in secure coding and mobile programming, and to review BMCC curricula in light of emerging trends
+        </span></li>
+      </ol>
+    </div>
+    <div class="contentContainer" id="activities" role="tabpanel" aria-labelledby="activities-tab">
+      <div class="grid grid-rows-4 grid-flow-col gap-4 text-left md:gap-10 md:grid-cols-3">
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900 dark:text-white">Training of Faculty in new Mobile Programming Applications</h3>
+            <p class="text-gray-500 text-base dark:text-gray-400">
+              Faculty training will be available through BMCCs long-time training partners including Learning Tree International. This highly reputable training resource offers both in person and online courses in mobile programming and secure coding as part of a wide spectrum of Information Technology topics. Participating faculty will be offered free vouchers to use for trainings of their choice at a time that is most suitable to their schedule
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900 dark:text-white">Conference Attendance by Faculty</h3>
+            <p class="text-gray-500 text-base dark:text-gray-400">The project team and other interested faculty will attend and present curricula and lessons learned from this project at various secure coding and mobile development conferences aimed at both higher education and industry audiences. Conference participation will allow team members to learn the latest mobile development technologies and real-world applications as well as pedagogical innovations and tools. These will also prove to be invaluable networking events as BMCC faculty continually pursue expanded internship opportunities for BMCC students. At least 4 faculty will present to share their research findings in this project at conferences each year, with financial support provided</p>
+          </div>
+        </div>
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900 dark:text-white">Faculty and Industry Roundtables</h3>
+            <p class="text-gray-500 text-base dark:text-gray-400">
+              The project team will organize yearly roundtable meetings to convene CIS faculty, interested educators from the partner high schools, and industry professionals to discuss topics of interest in cybersecurity and mobile programming
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentContainer" id="timeline" role="tabpanel" aria-labelledby="timeline-tab">
+      <ol class="relative border-s border-gray-200 dark:border-gray-700">
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Year 1 (2022-2023)</time>
+          <ul class="mt-2 max-w-0 space-y-1 list-disc list-inside">
+            <li><span class="font-medium text-gray-800">Choose 4 faculty members to steward the mobile programming courses</span></li>
+            <li><span class="font-medium text-gray-800">Offer training opportunities to interested faculty members</span></li>
+            <li><span class="font-medium text-gray-800">Organize yearly meetings</span></li>
+          </ul>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Year 2 (2023-2024)</time>
+          <ul class="mt-2 max-w-0 space-y-1 list-disc list-inside">
+            <li><span class="font-medium text-gray-800">Choose 4 faculty members to steward the mobile programming courses</span></li>
+            <li><span class="font-medium text-gray-800">Offer training opportunities to interested faculty members</span></li>
+          </ul>
+        </li>
+        <li class="ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Year 3 (2024-2025)</time>
+          <ul class="mt-2 max-w-0 space-y-1 list-disc list-inside">
+            <li><span class="font-medium text-gray-800">Choose 4 faculty members to steward the mobile programming courses</span></li>
+            <li><span class="font-medium text-gray-800">Offer training opportunities to interested faculty members</span></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <div class="contentContainer" id="evaluation" role="tabpanel" aria-labelledby="evaluation-tab">
+      <table class="tableContainer">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+          <th scope="col" class="px-6 py-3">KEY EVALUATION AREAS / QUESTIONS</th>
+          <th scope="col" class="px-6 py-3">DATA COLLECTION TOOLS & METHODS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <div class="mb-4">
+              <div class="ps-1">
+                <div class="mb-3 font-medium text-gray-900 whitespace-nowrap">Is project developed course and lab materials being used by trained faculty?</div>
+                <div class="mb-3 font-medium text-gray-900 whitespace-nowrap">How has educator conference attendance impacted the curriculum and technician education?</div>
+                <div class="mb-3 font-medium text-gray-900 whitespace-nowrap">How have the faculty or industry roundtables impacted the curriculum and technician education?</div>
+              </div>
+            </div>
+          </th>
+          <td class="px-6 py-4">Track new initiatives and methods through interviews, survey, and observation of participating programs, tracking individual and organizational change</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="bg-white rounded-lg shadow m-4">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <img src="https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/communications-marketing/university-identity/cuny-block-logo-1.jpg" class="h-8" alt="CUNY Logo" />
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="https://www.bmcc.cuny.edu/" class="hover:underline me-4 md:me-6">BMCC Website</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.actionButton {
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1D4ED8;
+}
+.actionButton :hover {
+    background-color: #1E40AF;
+}
+.formLabel {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #111827;
+}
+.formInput {
+    display: block;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: #D1D5DB;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #111827;
+    background-color: #F9FAFB;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}

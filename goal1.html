@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  <link rel="stylesheet" href="goalStyle.css">
+  <title>Goal 1</title>
+</head>
+<body>
+<!-- NAVIGATION -->
+<nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://www.bmcc.cuny.edu/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="https://mybmcc.bmcc.cuny.edu/public/images/customization/Common/mybmcc.bmcc.cuny.edu_APM_act_logon_page_ag/image07_en.jpg" class="h-8" alt="BMCC Logo">
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <a href="application.php" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Apply to Club</a>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+        </li>
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Program Goals</button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="goal1.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Goal 1</a>
+              </li>
+              <li>
+                <a href="goal2.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Goal 2</a>
+              </li>
+              <li>
+                <a href="goal3.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Goal 3</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="faculty.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Faculty</a>
+        </li>
+        <li>
+          <a href="events.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">News & Events</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- GOAL INFO -->
+<section class="bg-white" style="margin-top: 50px">
+  <div class="goalInfoContainer">
+    <h1 class="goalInfoTitle">Build a Comprehensive and Experiential Secure Mobile Programming Concentration at BMCC</h1>
+    <p class="goalInfoText">BMCC will build on existing degree programs and courses to establish a robust curricular track for mobile app development with emphasis on cybersecurity, secure coding, and experiential learning linked to real-world opportunities with NYC-based companies. BMCC students on this track will be prepared with core technical skills and competencies necessary for ongoing study at a four-year college and/or employment in the NYC mobile programming industry.</p>
+  </div>
+</section>
+
+<!-- TAB CONTENT -->
+<div class="md:flex" style="padding: 20px">
+  <ul class="tabContainer" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+    <li class="me-2" role="presentation">
+      <button class="tabButton" id="objectives-tab" data-tabs-target="#objectives" type="button" role="tab" aria-controls="objectives" aria-selected="false">Objectives</button>
+    </li>
+    <li class="me-2" role="presentation">
+      <button class="tabButton" id="activities-tab" data-tabs-target="#activities" type="button" role="tab" aria-controls="activities" aria-selected="false">Activities</button>
+    </li>
+    <li class="me-2" role="presentation">
+      <button class="tabButton" id="timeline-tab" data-tabs-target="#timeline" type="button" role="tab" aria-controls="timeline" aria-selected="false">Timeline</button>
+    </li>
+    <li role="presentation">
+      <button class="tabButton" id="evaluation-tab" data-tabs-target="#evaluation" type="button" role="tab" aria-controls="evaluation" aria-selected="false">Evaluation</button>
+    </li>
+  </ul>
+  <div id="default-tab-content">
+    <div class="contentContainer" id="objectives" role="tabpanel" aria-labelledby="objectives-tab">
+      <ol class="space-y-5 text-gray-500 list-decimal list-inside">
+        <li><span class="font-medium text-gray-800">Create 3 new courses and modify 3 existing courses to be offered by the BMCC CIS department. Receive approval from the BMCC Curriculum Committees by 5/30/2023</span></li>
+        <li><span class="font-medium text-gray-800">Create a fully outfitted mobile programming lab and associated curricula, to be established by Fall 2023</span></li>
+        <li><span class="font-medium text-gray-800">Design Fall and Spring semester programming workshops on secure mobile programming to be offered to any enrolled CIS students. Launch workshop by Spring 2023</span></li>
+        <li><span class="font-medium text-gray-800">Annually expose at least 25% of enrolled BMCC CIS students to secure mobile programming curricula or experiential learning opportunities by the 2023 academic year</span></li>
+        <li><span class="font-medium text-gray-800">Build a cohort of at least 10 total students who are concentrating in secure mobile programming by the 2023 academic year</span></li>
+        <li><span class="font-medium text-gray-800">Encourage all students concentrating in secure mobile programming to obtain industry accepted certifications by offering a certification readiness workshop during Fall and Spring semesters. Workshop to be established by January 2023</span></li>
+        <li><span class="font-medium text-gray-800">Offer internship opportunities to at least half of the program participants during summer break. Target at least 10 students each year</span></li>
+        <li><span class="font-medium text-gray-800">Organize industry expert presentations and fire-chat meetings. Target 2 per academic year starting in the Spring 2023 semester</span></li>
+        <li><span class="font-medium text-gray-800">Offer stipends of $500 to each student, with total at least 5 students each school year to attend one professional conference related to mobile programming, secure coding, or the NSF ATE conference</span></li>
+      </ol>
+    </div>
+    <div class="contentContainer" id="activities" role="tabpanel" aria-labelledby="activities-tab">
+      <div class="grid grid-rows-4 grid-flow-col gap-4 text-left md:gap-10 md:grid-cols-3">
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900">Revised and New Courses</h3>
+            <p class="text-gray-500 text-base">BMCC will develop three new courses and revise three existing courses aimed at Computer Information Systems (CIS) majors. These courses will introduce students to background skills and knowledge necessary for pursuing further training in developing secure mobile applications. These courses will emphasize engaging students in solving real-world problems and making connections between foundational concepts and industry opportunities. Project faculty will work closely with both the BMCC CIS department and the Advisory Board to refine the scope of these courses</p>
+            <ul class="mt-3 text-gray-500 list-disc list-inside">
+              <li>iOS Mobile Programming</li>
+              <li>Mobile Cybersecurity Design Concepts</li>
+              <li>Capstone Mobile App Development</li>
+            </ul>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900">Creation of Mobile Programming Lab</h3>
+            <p class="text-gray-500 text-base">BMCC will outfit one of our existing computer labs with tablets that will be used as a test bed for mobile programs that are developed on PCs in a simulation environment. These tablets will remain permanently located in the lab in special charge docks and will be available to students who need to test their mobile applications with a physical platform</p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900">Workshops and Mentoring to Support Mobile Programming Certification for Students</h3>
+            <p class="text-gray-500 text-base">Students who complete mobile programming and/or iOS mobile programming courses will be encouraged and supported in obtaining industry mobile programming certification. Various certifications are available, such as Google Developers Certification and App Development with Swift Certification. The project team will provide test preparation workshops for these certifications. In these workshops, instructors will orient students to the tests and sample questions as well as share with students their working experiences in mobile development</p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900">Secure Mobile Programming Club Activities</h3>
+            <p class="text-gray-500 text-base">A new faculty-mentored club will be created for BMCC CIS students, with weekly meetings hosted in the Mobile Programming Lab. Students will be engaged in dialogue about mobile applications, challenges, and career opportunities. The faculty mentor will invite alumni working in mobile programing and related fields to visit and present about their career trajectories and technical projects. Faculty will arrange a visit by the club to a local tech company and the students have a chance to meet with a complete mobile development team and understand their working environment, job responsibilities, work schedule, company culture and the future employers expectations. The visit will allow students to connect the classroom knowledge to real world problems and it will motivate students learning. Under the supervision of the faculty mentor, students will work on a small mobile development project that will be showcased by the CIS department</p>
+          </div>
+        </div>
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900">Industry Internships</h3>
+            <p class="text-gray-500 text-base">BMCC is located at the heart of the Manhattan financial business district with many top 100 firms having offices in the area. BMCC and CIS department faculty have longstanding relationships with many of the education officers in these companies and there is a strong track record of partnering around student internships through the BMCC Office of Internships and Experiential Learning (OIEL). BMCC understands that professional internships and work experiences are at the heart of workforce training, and the staff of OIEL has agreed to support placement of mobile programming students in high quality industry internships either with Cognizant, the industry partner on this proposal, or with comparable NYC-based employers such as local non-profit organizations (HealthFirst, NYC Geospatial Information System and Mapping Org, etc.), tech and financial companies (Bank of New York, IBM and Bloomberg), or local IT companies (LarrosaTek). Given the number of collaborations between BMCC CIS faculty and the NYC tech sector, we do not foresee barriers to meeting our target metric for internship placement (at least 5 students each year from 2023-2025)</p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900">Industry Expert Presentations and Fireside Chats</h3>
+            <p class="text-gray-500 text-base">BMCC will organize at least one visit each semester by industry experts to offer presentations and/or fireside chat panels. These events will be open to high school students and teachers from the partner schools, enrolled BMCC students, faculty, and alumni. This exposure to the perspectives of industry experts will allow for valuable networking opportunities as well as student insight into challenges and career opportunities in the field</p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900">Participation in BMCC Career Day</h3>
+            <p class="text-gray-500 text-base">Alumni and industry partners will be invited (in-person or virtually) to participate in annual Career Day at BMCC. Both enrolled BMCC students and high school students engaged in pipeline activities will be encouraged to attend and, where applicable, to showcase their work in a poster exhibit. This important professional networking event is already part of the BMCC calendar, and we will leverage it to ensure that students are exposed to professional networks and opportunities in secure mobile programming sector in NYC </p>
+          </div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900">Attendance of Industry Conferences by Students</h3>
+            <p class="text-gray-500 text-base">To broaden their exposure to mobile development, students who work with faculty in the Mobile Programming Club and/or have been placed in industry internships will be encouraged to submit a project abstract to at least one professional conference. If accepted, students will receive stipends to attend. Students who are not presenting but are keenly interested in attending will also be eligible for a stipend. BMCC has set the target of supporting at least 4 students each academic year in attending and/or presenting at a conference, where they will have opportunities to meet with industry professionals and researchers and to gain deeper understanding of mobile programming and real-world problems/solutions</p>
+          </div>
+        </div>
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900">Academic Advisement Workshops</h3>
+            <p class="text-gray-500 text-base">Leveraging resources for the BMCC Academic Advisement Center, CIS faculty will conduct one workshop each semester to assist students on the secure mobile programming track in developing meaningful educational plans that will further their academic, career, and personal goals. All students will also be offered 1:1 faculty mentoring and career counseling support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentContainer" id="timeline" role="tabpanel" aria-labelledby="timeline-tab">
+      <ol class="relative border-s border-gray-200 dark:border-gray-700">
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Year 1 (2022-2023)</time>
+          <ul class="mt-2 max-w-0 space-y-1 list-disc list-inside">
+            <li><span class="font-medium text-gray-800">Start the approval process of the new and modified courses</span></li>
+            <li><span class="font-medium text-gray-800">Organize Workshops for BMCC students</span></li>
+          </ul>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Year 2 (2023-2024)</time>
+          <ul class="mt-2 max-w-0 space-y-1 list-disc list-inside">
+            <li><span class="font-medium text-gray-800">Continue the approval process of the new and modified courses</span></li>
+            <li><span class="font-medium text-gray-800">Announce the new program and the courses to the students</span></li>
+            <li><span class="font-medium text-gray-800">New and modified courses ready for registration</span></li>
+            <li><span class="font-medium text-gray-800">Organize Workshops for BMCC students</span></li>
+            <li><span class="font-medium text-gray-800">Offer Internship opportunities to BMCC students</span></li>
+            <li><span class="font-medium text-gray-800">Attend ATE Conferences with students</span></li>
+          </ul>
+        </li>
+        <li class="ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Year 3 (2024-2025)</time>
+          <ul class="mt-2 max-w-0 space-y-1 list-disc list-inside">
+            <li><span class="font-medium text-gray-800">New and modified courses ready for registration</span></li>
+            <li><span class="font-medium text-gray-800">Organize Workshops for BMCC students</span></li>
+            <li><span class="font-medium text-gray-800">Offer Internship opportunities to BMCC students</span></li>
+            <li><span class="font-medium text-gray-800">Attend ATE Conferences with students</span></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <div class="contentContainer" id="evaluation" role="tabpanel" aria-labelledby="evaluation-tab">
+      <table class="tableContainer">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700">
+        <tr>
+          <th scope="col" class="px-6 py-3">KEY EVALUATION AREAS / QUESTIONS</th>
+          <th scope="col" class="px-6 py-3">DATA COLLECTION TOOLS & METHODS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd:bg-white even:bg-gray-50 border-b">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">How many new courses developed and how many modified?</th>
+          <td class="px-6 py-4">Collect number of courses developed and modified</td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-50 border-b">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">How has student education been impacted by the new and updated courses?</th>
+          <td class="px-6 py-4">Faculty and student surveys and interviews</td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-50 border-b">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">How have recruitment efforts impacted program enrollment?</th>
+          <td class="px-6 py-4">Collect number of students recruited and retained including underrepresented</td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-50 border-b">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">How has the mobile programming lab impacted student learning?</th>
+          <td class="px-6 py-4">Faculty and student surveys and interviews</td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-50 border-b">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">How has the Mobile Programming Club impacted student participation, retention and persistence?</th>
+          <td class="px-6 py-4">Interviews with faculty and students. Questions will explore impact before and after club establishment</td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-50 border-b">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">How have career day activities, industry presentations and CIS student workshops impacted technician education?</th>
+          <td class="px-6 py-4">Surveys of all participating students. Selected industry interviews</td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-50 border-b">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">How have summer student internships impacted student learning, retention and persistence?</th>
+          <td class="px-6 py-4">Surveys and interviews with educators and students, selected industry participants</td>
+        </tr>
+        <tr class="odd:bg-white even:bg-gray-50 border-b">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <div class="mb-4">
+              <div class="ps-1">
+                <div class="mb-3 font-medium text-gray-900 whitespace-nowrap">What changes in technician education have resulted from industry professional and advisory board meetings?</div>
+                <div class="mb-3 font-medium text-gray-900 whitespace-nowrap">Are the materials developed and accompanying professional development consistent with the identified needs of industry?</div>
+                <div class="mb-3 font-medium text-gray-900 whitespace-nowrap">Do participants engage with the project team to obtain the developed information?</div>
+                <div class="mb-3 font-medium text-gray-900 whitespace-nowrap">Do they apply the materials in ways that are based on the professional development?</div>
+                <div class="mb-3 font-medium text-gray-900 whitespace-nowrap">Can and do they show beneficial results from use of materials and associated training?</div>
+              </div>
+            </div>
+          </th>
+          <td class="px-6 py-4">Interviews with faculty and administrators from selected programs that have implemented changes. Are there changes in curriculum or pedagogy? Have the numbers of students served and diversity changed due to these changes?</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-white rounded-lg shadow m-4">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <img src="https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/communications-marketing/university-identity/cuny-block-logo-1.jpg" class="h-8" alt="CUNY Logo" />
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="https://www.bmcc.cuny.edu/" class="hover:underline me-4 md:me-6">BMCC Website</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

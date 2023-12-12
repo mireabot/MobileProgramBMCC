@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  <link rel="stylesheet" href="goalStyle.css">
+  <title>Goal 2</title>
+</head>
+<body>
+<!-- NAVIGATION -->
+<nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://www.bmcc.cuny.edu/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="https://mybmcc.bmcc.cuny.edu/public/images/customization/Common/mybmcc.bmcc.cuny.edu_APM_act_logon_page_ag/image07_en.jpg" class="h-8" alt="BMCC Logo">
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <a href="application.php" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Apply to Club</a>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+        </li>
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Program Goals</button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="goal1.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Goal 1</a>
+              </li>
+              <li>
+                <a href="goal2.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Goal 2</a>
+              </li>
+              <li>
+                <a href="goal3.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Goal 3</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="faculty.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Faculty</a>
+        </li>
+        <li>
+          <a href="events.php" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">News & Events</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- GOAL INFO -->
+<section class="bg-white" style="margin-top: 50px">
+  <div class="goalInfoContainer">
+    <h1 class="goalInfoTitle">Extend the Experiential Learning Pipeline to Manhattan High School Students</h1>
+    <p class="goalInfoText">Partnering with a local high school, BMCC will extend its college-to-career experiential learning pipeline to high school students by: (1) exposing them to applications and opportunities in the exciting field of secure mobile programming through outreach; (2) inviting them to build foundational skills and gain confidence through participation in summer STEM programming at BMCC; and (3) ensuring students are aware of opportunities to further technical training on the pipeline through enrolling in BMCC.</p>
+  </div>
+</section>
+<!-- TAB CONTENT -->
+<div class="md:flex" style="padding: 20px">
+  <ul class="tabContainer" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+    <li class="me-2" role="presentation">
+      <button class="tabButton" id="objectives-tab" data-tabs-target="#objectives" type="button" role="tab" aria-controls="objectives" aria-selected="false">Objectives</button>
+    </li>
+    <li class="me-2" role="presentation">
+      <button class="tabButton" id="activities-tab" data-tabs-target="#activities" type="button" role="tab" aria-controls="activities" aria-selected="false">Activities</button>
+    </li>
+    <li class="me-2" role="presentation">
+      <button class="tabButton" id="timeline-tab" data-tabs-target="#timeline" type="button" role="tab" aria-controls="timeline" aria-selected="false">Timeline</button>
+    </li>
+    <li role="presentation">
+      <button class="tabButton" id="evaluation-tab" data-tabs-target="#evaluation" type="button" role="tab" aria-controls="evaluation" aria-selected="false">Evaluation</button>
+    </li>
+  </ul>
+  <div id="default-tab-content">
+    <div class="contentContainer" id="objectives" role="tabpanel" aria-labelledby="objectives-tab">
+      <ol class="space-y-5 text-gray-500 list-decimal list-inside dark:text-gray-400">
+        <li><span class="font-medium text-gray-800">Organize an event with high schools to be held at the beginning of each school year aimed at exposing teachers and students to BMCC STEM program offerings for high school students and opportunities to enroll after graduation and pursue training in secure mobile programming. First event will be held in September 2023</span></li>
+        <li><span class="font-medium text-gray-800">
+          Increase the number of high school students taking programming courses and earning college credits through the BMCC College Now program, which gives high school students a head-start with pursuing college courses. Additionally, coordinate with the BMCC College Now office to create a course for college credit that is dedicated to mobile programming. College Now (CN) is a collaborative program of the City University of New York (CUNY) and the New York City Department of Education (NYCDOE), serving over 700 students annually. This existing mechanism will facilitate transfer into the BMCC CIS department after graduation. Aim to enroll at least 3 students annually from the partner high schools’ pipeline and/or College Now computing courses into CIS department at BMCC
+        </span></li>
+        <li><span class="font-medium text-gray-800">Design and launch a Summer Secure Mobile Programming Workshop for high school students with priority given to students from the partner schools. The workshop will span 2 weeks with activities on 4 days of each week (4 hours per day). Target launch in Summer 2023 with the goal of enrolling at least 5 students in the first year and increasing to 15 students in year 3</span></li>
+        <li><span class="font-medium text-gray-800">Participate in existing BMCC annual Career Day to promote the Mobile Programming concentration starting from the Spring Semester of 2023</span></li>
+      </ol>
+    </div>
+    <div class="contentContainer" id="activities" role="tabpanel" aria-labelledby="activities-tab">
+      <div class="grid grid-rows-4 grid-flow-col gap-4 text-left md:gap-10 md:grid-cols-3">
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900 dark:text-white">High-School Presentations and Meetings</h3>
+            <p class="text-gray-500 text-base dark:text-gray-400">BMCC will visit the partner high schools campus once per semester (with virtual visits as needed due to COVID-19) in order to build awareness among high school students of career options in Computer Science, in general, and in secure mobile application development, specifically. Students will have opportunities to ask questions and engage in dialogue with BMCC faculty</p>
+          </div>
+        </div>
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900 dark:text-white">High-School Programming Workshops</h3>
+            <p class="text-gray-500 text-base dark:text-gray-400">A BMCC faculty-led workshop will be organized once per semester to provide a hands-on learning experience for interested high school students to work on real programming applications and gain understanding of foundational concepts and skills in the process. We will seek to include at least one industry professional in each workshop as a strategy for illustrating the real-world relevance of the project, and to reinforce information about career paths. Students from
+
+              e high school students. An important outreach strategy, these workshops will be offered both in person and/or virtually to allow more enrollment. Interested high school students will receive follow-up information about additional opportunities to learn at BMCC through the Summer Programming Camp and through enrollment in College Now courses and matriculation after graduation</p>
+          </div>
+        </div>
+        <div>
+          <div class="mb-10">
+            <h3 class="flex items-center mb-2 text-lg font-medium text-gray-900 dark:text-white">Summer Programming Camp</h3>
+            <p class="text-gray-500 text-base dark:text-gray-400">The project team will work with industry partners to offer a Summer Programming Camp for high school students starting from 2023. The camp will run for 2 weeks each summer (4-days per week and 4 hours each day). The camp will be facilitated by a faculty mentor paired with an industry mentor, who will guide students through the experiential project of developing a simple mobile game. Students will complete the camp with a basic understanding of the software development life cycle, quality assurance, and secure coding. With an emphasis on engagement and fun, the Summer Programming Camp will also serve as a gateway into enrollment in BMCC courses and degree programs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentContainer" id="timeline" role="tabpanel" aria-labelledby="timeline-tab">
+      <ol class="relative border-s border-gray-200 dark:border-gray-700">
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Year 1 (2022-2023)</time>
+          <ul class="mt-2 max-w-0 space-y-1 list-disc list-inside">
+            <li><span class="font-medium text-gray-800">High-School presentations and meetings</span></li>
+            <li><span class="font-medium text-gray-800">Participate annual career day activities</span></li>
+          </ul>
+        </li>
+        <li class="mb-10 ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Year 2 (2023-2024)</time>
+          <ul class="mt-2 max-w-0 space-y-1 list-disc list-inside">
+            <li><span class="font-medium text-gray-800">High-School presentations and meetings</span></li>
+            <li><span class="font-medium text-gray-800">Summer Programming Workshops for high-school students</span></li>
+            <li><span class="font-medium text-gray-800">Participate annual career day activities</span></li>
+          </ul>
+        </li>
+        <li class="ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Year 3 (2024-2025)</time>
+          <ul class="mt-2 max-w-0 space-y-1 list-disc list-inside">
+            <li><span class="font-medium text-gray-800">High-School presentations and meetings</span></li>
+            <li><span class="font-medium text-gray-800">Summer Programming Workshops for high-school students</span></li>
+            <li><span class="font-medium text-gray-800">Participate annual career day activities</span></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <div class="contentContainer" id="evaluation" role="tabpanel" aria-labelledby="evaluation-tab">
+      <table class="tableContainer">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+          <th scope="col" class="px-6 py-3">KEY EVALUATION AREAS / QUESTIONS</th>
+          <th scope="col" class="px-6 py-3">DATA COLLECTION TOOLS & METHODS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">How has the Mobile Programming Club impacted student participation, retention and persistence?</th>
+          <td class="px-6 py-4">Interviews with faculty and students. Questions will explore impact before and after club establishment</td>
+        </tr>
+        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">How have the High School programming workshops and summer programming camps impacted student learning and program enrollment?</th>
+          <td class="px-6 py-4">
+            <div class="mb-3">Interviews with educators and students from a sample of participating high schools</div>
+            <div class="mb-3">Participating summer camp student surveys and selected interviews</div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="bg-white rounded-lg shadow m-4">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <img src="https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/communications-marketing/university-identity/cuny-block-logo-1.jpg" class="h-8" alt="CUNY Logo" />
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="https://www.bmcc.cuny.edu/" class="hover:underline me-4 md:me-6">BMCC Website</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

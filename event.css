@@ -1,0 +1,76 @@
+.eventCard {
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: #E5E7EB;
+    max-width: 24rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.eventCard:hover {
+    grayscale: grayscale(0);
+}
+.eventTitle {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #111827;
+}
+.eventText {
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+    color: #374151;
+}
+.eventDateBadge {
+    display: inline-flex;
+    padding: 0.25rem 0.5rem;
+    align-items: center;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #1E40AF;
+    background-color: #DBEAFE;
+}
+.eventsGrid {
+    display: grid;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @media (min-width: 1024px) {
+        margin-bottom: 4rem;
+    }
+}
+.titleText {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: #111827;
+
+    @media (min-width: 768px) {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    @media (min-width: 1024px) {
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+}
+.textFilled {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    background-color: #2563EB;
+}
+.eventImage {
+    border-radius: 0.5rem;
+    max-width: 100%;
+    height: auto;
+}
